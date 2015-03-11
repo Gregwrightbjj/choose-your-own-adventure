@@ -2,13 +2,37 @@
 <html>
   <head>
     <title>Choose Your Own Adventure</title>
-
+    
     <script src="libs/underscore.js"></script>
     <script src="libs/jquery.js"></script>
     <script src="libs/handlebars.js"></script>
     <script src="libs/backbone.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="index.css">
   </head>
   <body>
+        <div id="stuff"></div>
+
+        <script type="x-handlebars-template" id="toc-template">
+        
+        {{#each this}}
+        <div class="tocHeader">
+          <div>
+          <a href="/page/{{page}}">Page: {{page}}</a></div>
+          <div>Title: {{title}}</div>
+        </div>
+        {{/each}}
+        
+        </script>
+
+        <script type="x-handlebars-template" id="pages-template">
+          
+          <div>Paragraph:{{paragraphs}}</div>
+          <div>Page:{{page}}</div>
+          <div>{{sentence}}</div>
+          </script>
+
+
     <script src="index.js"></script>
   </body>
 </html>
