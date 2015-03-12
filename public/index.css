@@ -2,8 +2,76 @@
 	margin:0;
 	padding:0;
 	box-sizing:border-box;
+	background-color: inherit;
+}
+.your-clock{
+zoom: 0.3;
+-moz-transform: scale(0.5);
+display: inline-block;
+right: 0px;
+top: 2px;
+
+}
+.bigHeader{
+	margin-left: 31%;
+font-family: 'Nothing You Could Do', cursive;
+font-size: 40px;
+}
+.whole{
+	width: 100%;
+	height: 100vh;
+	background-color: grey;
+
+}
+#stuff{
+	width: 100%;
+	height: 100vh;
+	background-color: gray;
+	
+
 }
 .tocHeader{
 	margin-bottom: 8px;
 	margin-left: 3px;
+}
+.pageHeader{
+	margin-bottom: 8px;
+	margin-left:3px;
+}
+.pContainer{
+width: 50%;
+text-align: center;
+margin-left: 25%;
+border: solid black 1px;
+border-radius: 16px;
+padding: 7px;
+font-family: 'Covered By Your Grace', cursive;
+}
+.tocContainer{
+width: 50%;
+text-align: center;
+margin-left: 25%;
+border: solid black 1px;
+border-radius: 16px;
+padding: 7px;
+font-family: 'Covered By Your Grace', cursive;
+
+}
+.links{
+	width: 50%;
+text-align: center;
+margin-left: 25%;
+border: solid black 1px;
+border-radius: 16px;
+padding: 7px;
+font-family: 'Covered By Your Grace', cursive;
+}
+.bigP{
+	
+}
+.bigT{
+	
+}
+#stuff{
+
 }
