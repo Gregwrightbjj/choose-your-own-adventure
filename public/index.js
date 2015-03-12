@@ -8,12 +8,6 @@ var createDate = function(){
 }
 
 
-// var clock = $('.your-clock').FlipClock(3600, {
-// // ... your options here
-// 	clockFace: "TwelveHourClock"
-
-// });
-// var time  = clock.getTime();
 
 //Router
 var Router = Backbone.Router.extend({
@@ -76,6 +70,7 @@ var PagesView = Backbone.View.extend({
 	className: "bigP",
 
 	initialize: function(){
+	
 		this.data = {}
 		this.render()
 	},
@@ -86,7 +81,13 @@ var PagesView = Backbone.View.extend({
 	},
 	
 	update: function(data){
-		this.data = data
+		this.data = {
+			a : data.paragraphs[0],
+			b : data.paragraphs[0],
+			c : data.paragraphs[0],
+			d : data.paragraphs[0]
+			
+		}
 		this.render()
 	}
 	
@@ -99,17 +100,18 @@ $(document).on("ready", function(){
 		Pages: Handlebars.compile($("#pages-template").text() )
 
 	}
-	
+
 	//Pages view instance
 	views.pages = new PagesView()
 	
 	//Toc view instance 
 	views.toc = new TocView() 
+	//new Router
 	var router = new Router()
-
+	//creates date
 	createDate()
 
-	
+	//initiates routes
 	Backbone.history.start()
 
 })
